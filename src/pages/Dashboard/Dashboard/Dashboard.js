@@ -44,6 +44,10 @@ function Dashboard(props) {
     const drawer = (
         <div>
             <Toolbar />
+            <Link to="/home" >
+                <Button sx={{ backgroundColor: 'cyan', m: 2 }} color="inherit">Home
+                </Button>
+            </Link>
             <Divider />
             <Link to="/appointment">
                 <Button color="inherit">Appointment
