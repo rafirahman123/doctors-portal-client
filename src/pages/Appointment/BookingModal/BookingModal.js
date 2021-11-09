@@ -45,7 +45,7 @@ const BookingModal = ({ openBooking, handleBookingClose, booking, date, setBooki
         }
         // send to the server
         // console.log(appointment);
-        fetch('http://localhost:5000/appintments', {
+        fetch('https://powerful-hollows-74476.herokuapp.com/appintments', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
