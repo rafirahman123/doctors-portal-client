@@ -18,7 +18,8 @@ import {
     Switch,
     Route,
     Link,
-    useRouteMatch
+    useRouteMatch,
+    NavLink
 } from "react-router-dom";
 import Typography from '@mui/material/Typography';
 import { Button } from '@mui/material';
@@ -59,10 +60,10 @@ function Dashboard(props) {
                 </Button>
             </Link>
             {admin && <Box>
-                <Link to={`${url}/makeAdmin`}>
+                <NavLink to={`${url}/makeAdmin`}>
                     <Button color="inherit">Make Admin
                     </Button>
-                </Link>
+                </NavLink>
                 <Link to={`${url}/addDoctor`}>
                     <Button color="inherit">Add Doctor
                     </Button>
